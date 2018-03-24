@@ -17,10 +17,10 @@ function currentLine(line) {
   if (line.length === 0) {
     return "The line is currently empty.";
   } else {
-    var queue = "The line is currently: ";
+    var lineString = "The line is currently: ";
     for (var i = 0; i < line.length - 1; i++) {
-      queue += `${i + 1}. ${deliLine[i]}, `;
+      lineString += `${i + 1}. ${deliLine[i]}, `;
     }
   }
-  return queue;
+  return lineString;
 }
